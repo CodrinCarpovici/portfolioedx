@@ -92,7 +92,11 @@ header {
   box-shadow: var(--card-shadow);
 }
 /* About Section */
-
+.page-header {
+  color: var(--text-theme-color);
+  white-space: nowrap;
+  margin-right: 10px;
+}
 /* Work Section */
 
 /* Contact Section */
