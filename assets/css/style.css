@@ -49,6 +49,8 @@ header {
   background: var(--theme-color);
   color: var(--secondary-color);
   padding: 0px 10px 0px 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #nav-links li,
@@ -246,4 +248,32 @@ main {
   color: var(--text-theme-color-hover);
 }
 
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  #navigation {
+    display: none;
+  }
+
+  #work-section {
+    height: 50vh;
+  }
+
+  .card-text {
+    max-width: 100%;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  #work-section {
+    grid-template-areas:
+      "dev-portfolio dev-portfolio"
+      "little-lemon little-lemon"
+      "eurokit eurokit"
+      "lucky-shrub lucky-shrub"
+      "placeholder placeholder";
+  }
+
+  .contact-link {
+    font-size: 14px;
+  }
+}
 
