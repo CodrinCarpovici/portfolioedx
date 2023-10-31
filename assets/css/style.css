@@ -1,4 +1,11 @@
 /* General CSS/Whole Document */
+:root {
+  --theme-color: rgb(146,204,205);
+  --secondary-color: rgb(49,52,61);
+  --text-theme-color: rgb(68,88,118);
+  --mask-color: rgba(111,150,178, 0.7);
+}
+
 * {
   box-sizing: border-box;
 }
