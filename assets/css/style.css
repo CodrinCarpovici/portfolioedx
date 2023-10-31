@@ -95,7 +95,23 @@ header {
 .page-header {
   color: var(--text-theme-color);
   white-space: nowrap;
-  margin-right: 10px;
+  margin-right: 20px;
+}
+
+.content-section {
+  position: relative;
+  display: inline-block;
+}
+
+/* Added Line Before Text */
+.content-section::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  height: 100%;
+  width: 3px;
+  background-color: var(--text-theme-color);
 }
 /* Work Section */
 
