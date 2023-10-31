@@ -36,6 +36,9 @@ img {
 
 /* Header/Navbar */
 header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: var(--secondary-color);
 }
 /* Hero Section */
