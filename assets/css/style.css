@@ -47,6 +47,20 @@ header {
   color: var(--secondary-color);
   padding: 0px 10px 0px 40px;
 }
+
+#nav-links li {
+  display: inline;
+}
+
+.nav-link {
+  color: var(--theme-color);
+  font-size: 24px;
+  margin: 0px 5px;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
+
+
 /* Hero Section */
 
 /* About Section */
