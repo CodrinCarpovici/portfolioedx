@@ -47,7 +47,7 @@ header {
   padding: 0px 10px 0px 40px;
 }
 
-#nav-links li {
+#nav-links li, #contact-section li {
   display: inline;
 }
 
@@ -188,3 +188,10 @@ main {
 }
 
 /* Contact Section */
+.contact-link {
+  color: var(--text-theme-color);
+  font-size: 18px;
+  margin: 0px 5px;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
