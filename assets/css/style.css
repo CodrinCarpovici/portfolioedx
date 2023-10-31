@@ -1,9 +1,9 @@
 /* General CSS/Whole Document */
 :root {
-  --theme-color: rgb(146,204,205);
-  --secondary-color: rgb(49,52,61);
-  --text-theme-color: rgb(68,88,118);
-  --mask-color: rgba(111,150,178, 0.7);
+  --theme-color: rgb(146, 204, 205);
+  --secondary-color: rgb(49, 52, 61);
+  --text-theme-color: rgb(68, 88, 118);
+  --mask-color: rgba(60, 122, 167, 0.7);
 }
 
 * {
@@ -13,7 +13,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -28,10 +29,6 @@ h6 {
 
 p {
   margin: 0;
-}
-
-img {
-  width: 500px;
 }
 
 /* Header/Navbar */
@@ -59,13 +56,18 @@ header {
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
 }
-
-
 /* Hero Section */
-
+.hero-image {
+  position: relative;
+  height: 20vh;
+  background-image: linear-gradient(var(--mask-color), var(--mask-color)),
+  url("../images/02-hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* About Section */
 
 /* Work Section */
 
 /* Contact Section */
-
