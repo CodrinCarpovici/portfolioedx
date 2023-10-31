@@ -32,8 +32,6 @@ p {
   margin: 0;
 }
 
-
-
 /* Header/Navbar */
 header {
   display: flex;
@@ -64,7 +62,7 @@ header {
   position: relative;
   height: 20vh;
   background-image: linear-gradient(var(--mask-color), var(--mask-color)),
-  url("../images/02-hero-bg.jpg");
+    url("../images/02-hero-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,5 +121,27 @@ header {
   padding-bottom: 20px;
 }
 /* Work Section */
+#work-section {
+  display: grid;
+}
 
+#little-lemon {
+  background-image: url("../images/restaurant.jpg");
+}
+
+#eurokit {
+  background-image: url("../images/mechanic.jpg");
+}
+
+#dev-portfolio {
+  background-image: url("../images/developer.jpg");
+}
+
+#lucky-shrub {
+  background-image: url("../images/garden.jpg");
+}
+
+#placeholder {
+  background-image: url("../images/02-portfolio-4.jpg");
+}
 /* Contact Section */
