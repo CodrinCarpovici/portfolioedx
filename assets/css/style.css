@@ -58,6 +58,7 @@ header {
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
 }
+
 /* Hero Section */
 .hero-image {
   position: relative;
@@ -81,6 +82,12 @@ header {
   margin: 10px 0px;
   padding: 5px 10px;
   box-shadow: var(--card-shadow);
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Page Section */
@@ -120,6 +127,7 @@ header {
 .about-text {
   padding-bottom: 20px;
 }
+
 /* Work Section */
 #work-section {
   display: grid;
@@ -133,6 +141,7 @@ header {
     "dev-portfolio lucky-shrub";
 }
 
+/* Work Card */
 .work-card {
   display: flex;
   position: relative;
@@ -140,6 +149,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   align-items: end;
+  margin: 5px 5px;
 
   border: 3px solid var(--theme-color);
 }
