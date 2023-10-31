@@ -11,10 +11,10 @@
   <body>
     <!-- main logo / nav -->
     <header>
-      <h1>Codrin Carpovici</h1>
+      <h1 id="nav-brand">Codrin Carpovici</h1>
       <!-- navbar -->
-      <nav>
-        <ul>
+      <nav id="navigation">
+        <ul id="nav-links">
           <li class="nav-item">
             <a href="#about" class="nav-link">About Me</a>
           </li>
@@ -32,56 +32,118 @@
     </header>
 
     <!-- hero banner -->
-    <section class="hero-banner">
+    <section class="hero-image">
       <!-- image wrapper -->
-      <div class="image-wrapper">
-        <img src="./assets/images/02-hero-bg.jpg" alt="" />
-        <h2>Cool subtitle here!</h2>
+      <div class="hero-text-wrapper">
+        <h2 class="page-heading">Web Developer</h2>
       </div>
     </section>
 
     <main class="page-wrapper">
       <!-- about me -->
       <section class="page-section" id="about">
-        <h2>About Me</h2>
-        <div class="text-section">
-          <p class="about-text"></p>
+        <h2 class="page-header">About Me</h2>
+        <div id="text-section" class="content-section">
+          <p class="about-text">
+            I'm Codrin, a Front End Developer with a passion for creating user
+            friendly websites and applications. My primary technical skills are
+            in ReactJS, Bootstrap, JavaScript, HTML, CSS/SASS. I'm constantly
+            learning and keeping up to date with the latest technologies and
+            developments in the industry.
+          </p>
+          <p class="about-text">
+            When I'm not coding, I enjoy exploring new cultures, playing video
+            games, and learning about science and history. I believe that
+            problem-solving and creativity are at the core of development, and I
+            strive to deliver solutions that are both functional and
+            aesthetically pleasing.
+          </p>
         </div>
       </section>
 
       <!-- portfolio container -->
       <section class="page-section" id="work">
-        <h2>Work</h2>
+        <h2 class="page-header">Works</h2>
         <!-- work section -->
-        <div id="work-section">
-          <article class="work-card"></article>
-          <article class="work-card"></article>
-          <article class="work-card"></article>
-          <article class="work-card"></article>
-          <article class="work-card"></article>
+        <div id="work-section" class="content-section">
+          <!-- Card Containers-->
+          <article class="work-card" id="dev-portfolio">
+            <a href="https://codrincarpovici.com/">
+              <span class="card-link"></span>
+            </a>
+            <div class="card-text">
+              <h3 class="card-title">Dev Portfolio</h3>
+              <h4 class="card-subtitle">React/Bootstrap/framer-motion</h4>
+            </div>
+          </article>
+          <article class="work-card" id="little-lemon">
+            <a href="https://github.com/CodrinCarpovici/projectcapstone">
+              <span class="card-link"></span>
+            </a>
+            <div class="card-text">
+              <h3 class="card-title">Little Lemon</h3>
+              <h4 class="card-subtitle">React/Javascript/SCSS</h4>
+            </div>
+          </article>
+          <article class="work-card" id="eurokit">
+            <a href="https://eurokit.org/">
+              <span class="card-link"></span>
+            </a>
+            <div class="card-text">
+              <h3 class="card-title">Eurokit</h3>
+              <h4 class="card-subtitle">React/Bootstrap/SCSS</h4>
+            </div>
+          </article>
+          <article class="work-card" id="lucky-shrub">
+            <a href="https://github.com/CodrinCarpovici/luckyShrub">
+              <span class="card-link"></span>
+            </a>
+            <div class="card-text">
+              <h3 class="card-title">Lucky Shrub</h3>
+              <h4 class="card-subtitle">HTML/CSS</h4>
+            </div>
+          </article>
+          <article class="work-card" id="placeholder">
+            <a href="#">
+              <span class="card-link"></span>
+            </a>
+            <div class="card-text">
+              <h3 class="card-title">Placeholder</h3>
+              <h4 class="card-subtitle">Placeholder Tech...</h4>
+            </div>
+          </article>
         </div>
       </section>
 
       <!-- contact -->
       <section class="page-section contact" id="contact">
-        <h2>Contact Me</h2>
+        <h2 class="page-header">Contact</h2>
         <!-- contact section -->
-        <div id="contact-section">
+        <div id="contact-section" class="content-section">
           <ul>
             <li class="contact-item">
-              <a href="" class="contact-link"></a>
+              <a href="tel:00447472272377" class="contact-link"
+                >+447472272377</a
+              >
             </li>
             <li class="contact-item">
-              <a href="" class="contact-link"></a>
+              <a
+                href="mailto:gabrielcodrincarpovici@gmail.com"
+                class="contact-link"
+                >gabrielcodrincarpovici@gmail.com</a
+              >
             </li>
             <li class="contact-item">
-              <a href="" class="contact-link"></a>
+              <a href="https://github.com/CodrinCarpovici" class="contact-link"
+                >GitHub</a
+              >
             </li>
             <li class="contact-item">
-              <a href="" class="contact-link"></a>
-            </li>
-            <li class="contact-item">
-              <a href="" class="contact-link"></a>
+              <a
+                href="https://www.linkedin.com/in/codrin-gabriel-c-31b4b899/"
+                class="contact-link"
+                >LinkedIn</a
+              >
             </li>
           </ul>
         </div>
