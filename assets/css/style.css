@@ -123,25 +123,48 @@ header {
 /* Work Section */
 #work-section {
   display: grid;
+  min-height: 500px;
+  height: 70vh;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "placeholder placeholder"
+  "little-lemon eurokit"
+  "dev-portfolio lucky-shrub";
+}
+
+.work-card {
+  display: flex;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: end;
+}
+
+#placeholder {
+  grid-area: placeholder;
+  background-image: url("../images/02-portfolio-4.jpg");
 }
 
 #little-lemon {
+  grid-area: little-lemon;
   background-image: url("../images/restaurant.jpg");
 }
 
 #eurokit {
+  grid-area: eurokit;
   background-image: url("../images/mechanic.jpg");
 }
 
 #dev-portfolio {
+  grid-area: dev-portfolio;
   background-image: url("../images/developer.jpg");
 }
 
 #lucky-shrub {
+  grid-area: lucky-shrub;
   background-image: url("../images/garden.jpg");
 }
 
-#placeholder {
-  background-image: url("../images/02-portfolio-4.jpg");
-}
 /* Contact Section */
