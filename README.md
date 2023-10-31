@@ -1,4 +1,4 @@
-# Portofolio
+# edX Portfolio
 
 ## Description
 
@@ -25,7 +25,7 @@ On the website you can click the different navigation links in the navbar to get
 You can also read the About Me section where I added a summary of myself.
 Additionally you can visit other projects I have done by clicking on the different cards on the website.
 The Contact Section also provides links to my contact information which are clickable.
-Screen Readers can also follow the semantic structure of the page.
+Screen Readers can also follow the semantic structure of the page and it is also mobile-firendly.
 
 ![edX Portfolio](assets/images/portfolioedx.png)
 
