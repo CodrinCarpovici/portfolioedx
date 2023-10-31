@@ -241,6 +241,7 @@ main {
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
   transition: 0.1s ease-in-out;
+  text-align: end;
 }
 
 .contact-link:hover {
@@ -254,13 +255,16 @@ main {
     display: none;
   }
 
+  .page-section {
+    flex-direction: column;
+  }
+
   #work-section {
     height: 50vh;
   }
 
   .card-text {
     max-width: 100%;
-    font-size: 14px;
     margin-bottom: 5px;
   }
   #work-section {
@@ -273,7 +277,18 @@ main {
   }
 
   .contact-link {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card-subtitle {
+    display: none;
+  }
+  .contact-link {
+    margin-top: 5px;
     font-size: 14px;
+    
   }
 }
 
