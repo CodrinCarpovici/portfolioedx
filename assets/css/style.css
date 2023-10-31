@@ -169,4 +169,11 @@ header {
   background-image: var(--default-mask), url("../images/garden.jpg");
 }
 
+/* Work Card Text */
+.card-text {
+  padding: 5px 10px 5px 20px;
+  margin-bottom: 20px;
+  background: var(--theme-color);
+}
+
 /* Contact Section */
