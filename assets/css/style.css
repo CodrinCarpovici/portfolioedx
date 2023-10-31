@@ -3,8 +3,9 @@
   --theme-color: rgb(146, 204, 205);
   --secondary-color: rgb(49, 52, 61);
   --text-theme-color: rgb(68, 88, 118);
-  --mask-color: rgba(60, 122, 167, 0.7);
+  --mask-color: rgba(123, 150, 170, 0.7);
   --card-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  --default-mask: linear-gradient(var(--mask-color), var(--mask-color));
 }
 
 * {
@@ -61,8 +62,7 @@ header {
 .hero-image {
   position: relative;
   height: 20vh;
-  background-image: linear-gradient(var(--mask-color), var(--mask-color)),
-    url("../images/02-hero-bg.jpg");
+  background-image: var(--default-mask), url("../images/02-hero-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,10 +127,10 @@ header {
   height: 70vh;
   width: 100%;
   grid-template-columns: 50% 50%;
-  grid-template-areas: 
-  "placeholder placeholder"
-  "little-lemon eurokit"
-  "dev-portfolio lucky-shrub";
+  grid-template-areas:
+    "placeholder placeholder"
+    "little-lemon eurokit"
+    "dev-portfolio lucky-shrub";
 }
 
 .work-card {
@@ -140,31 +140,33 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   align-items: end;
+
+  border: 3px solid var(--theme-color);
 }
 
 #placeholder {
   grid-area: placeholder;
-  background-image: url("../images/02-portfolio-4.jpg");
+  background-image: var(--default-mask), url("../images/02-portfolio-4.jpg");
 }
 
 #little-lemon {
   grid-area: little-lemon;
-  background-image: url("../images/restaurant.jpg");
+  background-image: var(--default-mask), url("../images/restaurant.jpg");
 }
 
 #eurokit {
   grid-area: eurokit;
-  background-image: url("../images/mechanic.jpg");
+  background-image: var(--default-mask), url("../images/mechanic.jpg");
 }
 
 #dev-portfolio {
   grid-area: dev-portfolio;
-  background-image: url("../images/developer.jpg");
+  background-image: var(--default-mask), url("../images/developer.jpg");
 }
 
 #lucky-shrub {
   grid-area: lucky-shrub;
-  background-image: url("../images/garden.jpg");
+  background-image: var(--default-mask), url("../images/garden.jpg");
 }
 
 /* Contact Section */
