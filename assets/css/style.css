@@ -96,14 +96,14 @@ main {
   justify-content: space-around;
   align-items: center;
   max-width: 100%;
-  margin: 3% 15%;
+  margin: 2% 15%;
 }
 
 /* About Section */
 .page-header {
   color: var(--text-theme-color);
-  white-space: nowrap;
   margin-right: 20px;
+  text-align: end;
 }
 
 .content-section {
@@ -184,6 +184,7 @@ main {
   padding: 5px 10px 5px 20px;
   margin-bottom: 20px;
   background: var(--theme-color);
+  color: var(--text-theme-color);
 }
 
 /* Contact Section */
