@@ -1,3 +1,4 @@
+/* General CSS/Whole Document */
 * {
   box-sizing: border-box;
 }
@@ -21,3 +22,18 @@ h6 {
 p {
   margin: 0;
 }
+
+img {
+  width: 500px;
+}
+
+/* Header/Navbar */
+
+/* Hero Section */
+
+/* About Section */
+
+/* Work Section */
+
+/* Contact Section */
+
