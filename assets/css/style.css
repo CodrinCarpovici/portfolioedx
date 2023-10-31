@@ -41,6 +41,12 @@ header {
   align-items: center;
   background-color: var(--secondary-color);
 }
+
+#nav-brand {
+  background: var(--theme-color);
+  color: var(--secondary-color);
+  padding: 0px 10px 0px 40px;
+}
 /* Hero Section */
 
 /* About Section */
