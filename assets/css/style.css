@@ -148,9 +148,9 @@ main {
   width: 100%;
   grid-template-columns: 50% 50%;
   grid-template-areas:
-    "placeholder placeholder"
+    "dev-portfolio dev-portfolio"
     "little-lemon eurokit"
-    "dev-portfolio lucky-shrub";
+    "lucky-shrub placeholder";
 }
 
 /* Work Card */
@@ -167,6 +167,7 @@ main {
   box-shadow: var(--card-shadow);
 }
 
+/* Work Card Background */
 .work-card::before {
   content: "";
   position: absolute;
@@ -179,10 +180,13 @@ main {
   z-index: 0;
 }
 
+/* Work Card Hover */
 .work-card:hover::before {
   background: var(--light-mask-color);
+  cursor: pointer;
 }
 
+/* Work Cards Images */
 #placeholder {
   grid-area: placeholder;
   background-image: url("../images/02-portfolio-4.jpg");
