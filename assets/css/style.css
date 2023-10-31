@@ -36,7 +36,7 @@ p {
   margin: 0;
 }
 
-/* Header/Navbar */
+/* HEADER */
 header {
   display: flex;
   justify-content: space-around;
@@ -44,7 +44,7 @@ header {
   background-color: var(--secondary-color);
 }
 
-/* Navbar */
+/* NAVBAR */
 #nav-brand {
   background: var(--theme-color);
   color: var(--secondary-color);
@@ -71,7 +71,7 @@ header {
   color: var(--theme-color-hover);
 }
 
-/* Hero Section */
+/* HERO SECTION */
 .hero-image {
   position: relative;
   height: 20vh;
@@ -96,13 +96,13 @@ header {
   box-shadow: var(--card-shadow);
 }
 
-/* Main */
+/* MAIN */
 main {
   display: flex;
   flex-direction: column;
 }
 
-/* Page Section */
+/* PAGE SECTION */
 .page-section {
   display: flex;
   justify-content: space-around;
@@ -111,7 +111,7 @@ main {
   margin: 2% 15%;
 }
 
-/* About Section */
+/* ABOUT SECTION */
 .page-header {
   color: var(--text-theme-color);
   margin-right: 20px;
@@ -140,7 +140,7 @@ main {
   padding-bottom: 20px;
 }
 
-/* Work Section */
+/* WORK SECTION */
 #work-section {
   display: grid;
   min-height: 500px;
@@ -221,7 +221,7 @@ main {
   z-index: 1;
 }
 
-/* Contact Section */
+/* CONTACT SECTION */
 .contact-link {
   color: var(--text-theme-color);
   font-size: 20px;
