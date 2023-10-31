@@ -1,9 +1,12 @@
 /* General CSS/Whole Document */
 :root {
   --theme-color: rgb(146, 204, 205);
+  --theme-color-hover: rgb(71, 195, 197);
   --secondary-color: rgb(49, 52, 61);
   --text-theme-color: rgb(68, 88, 118);
-  --mask-color: rgba(123, 150, 170, 0.7);
+  --text-theme-color-hover: rgb(16, 53, 107);
+  --mask-color: rgba(123, 150, 170, 0.8);
+  --light-mask-color: rgba(123, 150, 170, 0.3);
   --card-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   --default-mask: linear-gradient(var(--mask-color), var(--mask-color));
 }
@@ -41,13 +44,15 @@ header {
   background-color: var(--secondary-color);
 }
 
+/* Navbar */
 #nav-brand {
   background: var(--theme-color);
   color: var(--secondary-color);
   padding: 0px 10px 0px 40px;
 }
 
-#nav-links li, #contact-section li {
+#nav-links li,
+#contact-section li {
   display: inline;
 }
 
@@ -57,6 +62,13 @@ header {
   margin: 0px 5px;
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
+  transition: 0.1s ease-in-out;
+}
+
+/* Nav Links On Hover */
+.nav-link:hover {
+  cursor: pointer;
+  color: var(--theme-color-hover);
 }
 
 /* Hero Section */
@@ -155,29 +167,45 @@ main {
   box-shadow: var(--card-shadow);
 }
 
+.work-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--mask-color);
+  transition: 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.work-card:hover::before {
+  background: var(--light-mask-color);
+}
+
 #placeholder {
   grid-area: placeholder;
-  background-image: var(--default-mask), url("../images/02-portfolio-4.jpg");
+  background-image: url("../images/02-portfolio-4.jpg");
 }
 
 #little-lemon {
   grid-area: little-lemon;
-  background-image: var(--default-mask), url("../images/restaurant.jpg");
+  background-image: url("../images/restaurant.jpg");
 }
 
 #eurokit {
   grid-area: eurokit;
-  background-image: var(--default-mask), url("../images/mechanic.jpg");
+  background-image: url("../images/mechanic.jpg");
 }
 
 #dev-portfolio {
   grid-area: dev-portfolio;
-  background-image: var(--default-mask), url("../images/developer.jpg");
+  background-image: url("../images/developer.jpg");
 }
 
 #lucky-shrub {
   grid-area: lucky-shrub;
-  background-image: var(--default-mask), url("../images/garden.jpg");
+  background-image: url("../images/garden.jpg");
 }
 
 /* Work Card Text */
@@ -186,13 +214,20 @@ main {
   margin-bottom: 20px;
   background: var(--theme-color);
   color: var(--text-theme-color);
+  z-index: 1;
 }
 
 /* Contact Section */
 .contact-link {
   color: var(--text-theme-color);
-  font-size: 18px;
+  font-size: 20px;
   margin: 0px 5px;
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
+  transition: 0.1s ease-in-out;
+}
+
+.contact-link:hover {
+  cursor: pointer;
+  color: var(--text-theme-color-hover);
 }
