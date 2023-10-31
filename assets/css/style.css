@@ -32,14 +32,7 @@ p {
   margin: 0;
 }
 
-/* Page Section */
-.page-section {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 100%;
-  margin: 20px 15%;
-}
+
 
 /* Header/Navbar */
 header {
@@ -91,6 +84,16 @@ header {
   padding: 5px 10px;
   box-shadow: var(--card-shadow);
 }
+
+/* Page Section */
+.page-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  margin: 3% 15%;
+}
+
 /* About Section */
 .page-header {
   color: var(--text-theme-color);
@@ -101,9 +104,10 @@ header {
 .content-section {
   position: relative;
   display: inline-block;
+  padding-left: 10px;
 }
 
-/* Added Line Before Text */
+/* Added Line Before Content */
 .content-section::before {
   content: " ";
   position: absolute;
@@ -112,6 +116,11 @@ header {
   height: 100%;
   width: 3px;
   background-color: var(--text-theme-color);
+}
+
+/* About Text */
+.about-text {
+  padding-bottom: 20px;
 }
 /* Work Section */
 
