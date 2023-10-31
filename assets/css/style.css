@@ -113,13 +113,6 @@ main {
   margin: 2% 15%;
 }
 
-/* ABOUT SECTION */
-.page-header {
-  color: var(--text-theme-color);
-  margin-right: 20px;
-  text-align: end;
-}
-
 .content-section {
   position: relative;
   display: inline-block;
@@ -135,6 +128,13 @@ main {
   height: 100%;
   width: 3px;
   background-color: var(--text-theme-color);
+}
+
+/* ABOUT SECTION */
+.page-header {
+  color: var(--text-theme-color);
+  margin-right: 20px;
+  text-align: end;
 }
 
 /* About Text */
@@ -234,6 +234,10 @@ main {
 }
 
 /* CONTACT SECTION */
+#contact-section {
+  width: 100%;
+}
+
 .contact-link {
   color: var(--text-theme-color);
   font-size: 20px;
@@ -267,6 +271,7 @@ main {
     max-width: 100%;
     margin-bottom: 5px;
   }
+  
   #work-section {
     grid-template-areas:
       "dev-portfolio dev-portfolio"
@@ -287,8 +292,7 @@ main {
   }
   .contact-link {
     margin-top: 5px;
-    font-size: 14px;
-    
+    font-size: 12px;
   }
 }
 
